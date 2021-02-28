@@ -1,0 +1,45 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  background-color: gray-dark
+}
+
+
+.App { 
+  margin: 20px;
+}
+
+.App>h1 {
+  margin-bottom: 0px
+}
+
+.createButton {
+  margin: 20px 0px
+}
+
+// remove caret from actions dropdown
+.actionDropDownToggle::after {
+  display: none;
+}
+
+.fieldError {
+    color: $danger;
+    ::before {
+      display: inline;
+      content: "⚠ ";
+      color: $danger;
+    }
+}
+
+// make close button in modal to view note
+.modalCloseBtn, 
+.modalCloseBtn:hover, 
+.modalCloseBtn:active, 
+.modalCloseBtn:focus, 
+.modalCloseBtn:visited {
+  background-color: $pink
+}
+
+#DropDownDelete {
+  color: $danger;
+}
